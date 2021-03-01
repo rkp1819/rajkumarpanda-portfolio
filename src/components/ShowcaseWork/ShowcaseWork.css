@@ -1,0 +1,19 @@
+.showcasework {
+  display: "flex" !important;
+  flex-direction: "column";
+  justify-content: "space-between";
+  flex-grow: 1;
+  width: "100%";
+  height: 100vh;
+  background-color: "white";
+}
+.showcasework__appbar {
+  margin-top: 5px;
+  background-color: lavender !important;
+  top: 0;
+  position: sticky !important;
+}
+
+.showcasework__appbar__tabpanel {
+  width: 100%;
+}

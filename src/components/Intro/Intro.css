@@ -1,14 +1,15 @@
 .intro {
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px;
 }
 
 .intro__part1 {
-  margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.01);
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 0.5rem;
+  margin-top: 50px;
 }
 .intro__part1 > h2 {
   color: black;
@@ -19,9 +20,10 @@
 }
 .intro__part2 {
   background-color: rgba(255, 0, 0, 0.01);
-  padding: 20px;
+  padding: 10px;
   border-radius: 0.5rem;
-  min-height: 15vh;
+  height: 90%;
+  margin: 10px;
 }
 .intro__part2 > h2 {
   color: tomato;
@@ -29,20 +31,25 @@
 }
 
 .intro__part2__tech_icons {
-  display: flex;
-  justify-content: space-around;
   margin: 10px;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  place-content: center;
+  place-items: center;
 }
 .intro__part2__tech_icons__item {
-  width: 50px;
+  width: 45px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .intro__part3 {
   background-color: rgba(0, 0, 255, 0.01);
-  padding: 20px;
+  padding: 10px;
   border-radius: 0.5rem;
-  min-height: 15vh;
+  height: 90%;
+  margin: 10px;
 }
 .intro__part3 > h2 {
   color: slateblue;
@@ -50,7 +57,15 @@
 }
 
 .intro__part3__social_icons {
-  display: flex;
-  justify-content: space-around;
   margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  place-content: center;
+  place-items: center;
+}
+
+.intro__part3__social_icons > .MuiButtonBase-root {
+  margin: 0px;
+  padding: 0px;
 }

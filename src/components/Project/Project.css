@@ -1,5 +1,63 @@
 .project {
-  min-height: 2000px;
-  min-width: 300px;
-  background-color: coral;
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.125fr 0.75fr 0.15fr;
+  grid-template-areas:
+    "title techStack"
+    "desc techStack"
+    "desc liveDemo";
+}
+
+.project__title {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0.5em;
+}
+
+.project__desc {
+  grid-area: desc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+
+.project__techStack {
+  grid-area: techStack;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+.project__liveDemo {
+  grid-area: liveDemo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0.5em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr 0.5fr;
+    grid-template-areas:
+      "title"
+      "techStack"
+      "liveDemo"
+      "desc";
+  }
 }

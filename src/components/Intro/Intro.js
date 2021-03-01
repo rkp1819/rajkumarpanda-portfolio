@@ -8,11 +8,9 @@ import {
   Mail,
 } from "@material-ui/icons";
 import React from "react";
-import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import "./Intro.css";
 function Intro() {
-  const history = useHistory();
   return (
     <div className="intro">
       <Grid
@@ -29,13 +27,13 @@ function Intro() {
             <h3>
               I build fully functional, production grade , scalable web
               applications with User Authentication and Realtime Database using{" "}
-              <span>
+              {/* <span>
                 <img src="/images/react_logo.png" alt="" width="50px" />
-              </span>
+              </span> */}
               <strong style={{ color: "dodgerblue" }}>React</strong> and{" "}
-              <span>
+              {/* <span>
                 <img src="/images/firebase_logo.png" alt="" width="50px" />
-              </span>
+              </span> */}
               <strong style={{ color: "gold" }}>Firebase</strong>
             </h3>
           </div>
