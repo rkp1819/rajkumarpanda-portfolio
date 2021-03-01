@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 5px;
+  margin-bottom: 50px;
 }
 
 .intro__part1 {
@@ -19,11 +20,13 @@
   margin-top: 20px;
 }
 .intro__part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(255, 0, 0, 0.01);
   padding: 10px;
   border-radius: 0.5rem;
-  height: 90%;
-  margin: 10px;
+  height: 100%;
 }
 .intro__part2 > h2 {
   color: tomato;
@@ -45,11 +48,13 @@
 }
 
 .intro__part3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(0, 0, 255, 0.01);
   padding: 10px;
   border-radius: 0.5rem;
-  height: 90%;
-  margin: 10px;
+  height: 100%;
 }
 .intro__part3 > h2 {
   color: slateblue;

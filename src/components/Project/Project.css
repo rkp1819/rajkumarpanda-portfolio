@@ -1,12 +1,12 @@
 .project {
   display: grid;
-  height: 90vh;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.125fr 0.75fr 0.15fr;
+  grid-template-rows: 0.125fr 0.85fr 0.05fr;
   grid-template-areas:
     "title techStack"
     "desc techStack"
     "desc liveDemo";
+  font-family: "Comic Neue" !important;
 }
 
 .project__title {
@@ -15,8 +15,13 @@
   align-items: center;
   justify-content: center;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px 1px gold;
   border-radius: 0.5em;
+  font-size: xx-large;
+  font-weight: 700;
+  font-variant-caps: titling-caps;
+  background-color: transparent;
 }
 
 .project__desc {
@@ -24,36 +29,56 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 50px 5px;
   border-radius: 0.5em;
-  overflow: auto;
+  background-color: transparent;
+  /* overflow: auto; */
 }
 
 .project__techStack {
   grid-area: techStack;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 5px;
-  margin: 5px;
+  margin: 20px 10px;
   border-radius: 0.5em;
-  overflow: auto;
+
+  /* overflow: auto; */
+}
+.project__techStack__item {
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: darkblue !important;
+  color: white !important;
 }
 .project__liveDemo {
   grid-area: liveDemo;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 5px;
   border-radius: 0.5em;
+  background-color: rgba(31, 255, 31, 0.7);
+  box-shadow: 1px 1px 5px 1px rgba(65, 255, 65, 0.3);
+  font-size: 16px;
+  color: blue;
+  cursor: pointer;
+}
+.project__liveDemo:hover {
+  transition: all 0.5s ease;
+  background-color: white;
+  color: blueviolet;
+  transform: scale(1.01);
 }
 
 @media only screen and (max-width: 1024px) {
   .project {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.2fr 0.1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.01fr 0.5fr;
     grid-template-areas:
       "title"
       "techStack"

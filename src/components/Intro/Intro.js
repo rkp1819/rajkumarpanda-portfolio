@@ -19,7 +19,7 @@ function Intro() {
           margin: 0,
           width: "100vw",
         }}
-        spacing={3}
+        spacing={4}
       >
         <Grid key={uuidv4()} item xs={12} sm={12} md={12}>
           <div className="intro__part1">
