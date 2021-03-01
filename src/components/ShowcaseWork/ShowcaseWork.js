@@ -14,7 +14,7 @@ function TabPanel(props) {
 
   return (
     <div
-      className="showcasework__appbar__tabpanel"
+      className="showcasework__tabpanel"
       role="tabpanel"
       hidden={value !== index}
       id={`scrollable-auto-tabpanel-${index}`}
@@ -64,7 +64,11 @@ export default function ShowcaseWork() {
         >
           {projects.map((item, index) => {
             return (
-              <Tab label={projects[index].title} {...a11yProps({ index })} />
+              <Tab
+                className={"showcasework__appbar__tab"}
+                label={projects[index].title}
+                {...a11yProps({ index })}
+              />
             );
           })}
         </Tabs>

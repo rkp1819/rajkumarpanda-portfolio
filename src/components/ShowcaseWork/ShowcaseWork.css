@@ -10,11 +10,16 @@
 }
 .showcasework__appbar {
   margin-top: 5px;
-  background-color: lavender !important;
+  background-color: deepskyblue !important;
+
   top: 0;
   position: sticky !important;
 }
 
-.showcasework__appbar__tabpanel {
+.showcasework__appbar__tab {
+  color: white !important;
+  font-weight: 600 !important;
+}
+.showcasework__tabpanel {
   width: 100%;
 }
