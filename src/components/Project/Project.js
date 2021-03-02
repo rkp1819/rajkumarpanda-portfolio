@@ -61,7 +61,7 @@ function Project({ index }) {
         elevation={5}
         className="project__liveDemo"
         onClick={() => {
-          window.location.href = projects[index].liveOn;
+          window.open(projects[index].liveOn, "_blank").focus();
         }}
       >
         {projects[index].liveOn}
