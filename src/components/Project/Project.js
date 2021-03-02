@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Project.css";
 import projects from "../Utils/project_data";
 import { Link, Paper } from "@material-ui/core";
 import { Redirect, useHistory } from "react-router-dom";
 function Project({ index }) {
   let history = useHistory();
+
   return (
     <div className="project">
-      <div className="project__title">{projects[index].title}</div>
-      <div className="project__desc">{projects[index].description}</div>
+      <Paper square={true} elevation={5} className="project__title">
+        {projects[index].title}
+      </Paper>
+      <Paper elevation={3} className="project__desc">
+        {projects[index].description}
+      </Paper>
       <div className="project__techStack">
         {projects[index].techStack.map((item, index) => {
           return (
@@ -18,14 +23,15 @@ function Project({ index }) {
           );
         })}
       </div>
-      <div
+      <Paper
+        elevation={5}
         className="project__liveDemo"
         onClick={() => {
           window.location.href = projects[index].liveOn;
         }}
       >
         {projects[index].liveOn}
-      </div>
+      </Paper>
     </div>
   );
 }

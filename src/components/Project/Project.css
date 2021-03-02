@@ -7,6 +7,7 @@
     "desc techStack"
     "desc liveDemo";
   font-family: "Comic Neue" !important;
+  gap: 20px;
 }
 
 .project__title {
@@ -15,25 +16,22 @@
   align-items: center;
   justify-content: center;
   padding: 5px;
-  margin: 10px;
-  box-shadow: 1px 1px 3px 1px gold;
-  border-radius: 0.5em;
+  margin: 5px;
   font-size: xx-large;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-variant-caps: titling-caps;
-  background-color: transparent;
 }
 
 .project__desc {
   grid-area: desc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: 50px 5px;
+  text-align: justify;
+  padding: 20px;
+  margin: 5px;
+  margin-top: 50px;
   border-radius: 0.5em;
-  background-color: transparent;
-  /* overflow: auto; */
+  /* height: max-content; */
+  max-height: 80vh;
+  overflow: auto;
 }
 
 .project__techStack {
@@ -43,7 +41,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 5px;
-  margin: 20px 10px;
+  margin: 5px;
   border-radius: 0.5em;
 
   /* overflow: auto; */
@@ -60,25 +58,23 @@
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
-  margin: 15px 5px;
+  margin: 5px;
   border-radius: 0.5em;
-  background-color: rgba(31, 255, 31, 0.7);
-  box-shadow: 1px 1px 5px 1px rgba(65, 255, 65, 0.3);
   font-size: 16px;
-  color: blue;
+  background-color: white !important;
+  color: blue !important;
   cursor: pointer;
 }
 .project__liveDemo:hover {
   transition: all 0.5s ease;
-  background-color: white;
-  color: blueviolet;
-  transform: scale(1.01);
+  background-color: rgba(31, 255, 31, 0.7) !important;
+  color: blueviolet !important;
 }
 
 @media only screen and (max-width: 1024px) {
   .project {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.01fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.01fr 1.5fr;
     grid-template-areas:
       "title"
       "techStack"
