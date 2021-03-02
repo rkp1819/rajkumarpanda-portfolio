@@ -13,6 +13,40 @@ function Project({ index }) {
       </Paper>
       <Paper elevation={3} className="project__desc">
         {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
+        {projects[index].description}
       </Paper>
       <div className="project__techStack">
         {projects[index].techStack.map((item, index) => {

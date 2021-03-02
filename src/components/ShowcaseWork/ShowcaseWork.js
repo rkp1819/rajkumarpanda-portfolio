@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
@@ -15,10 +15,6 @@ function TabPanel(props) {
   return (
     <div
       className="showcasework__tabpanel"
-      style={{
-        filter:
-          "hue-rotate(" + Math.floor(Math.random() * 360) + "deg) !important",
-      }}
       role="tabpanel"
       hidden={value !== index}
       id={`scrollable-auto-tabpanel-${index}`}
@@ -50,12 +46,8 @@ function a11yProps(index) {
 export default function ShowcaseWork() {
   const [value, setValue] = React.useState(0);
 
-  const [filter, setFilter] = useState("");
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    event.target.style.filter =
-      "hue-rotate(" + Math.floor(Math.random() * 360) + "deg) !important";
   };
 
   return (
