@@ -8,6 +8,7 @@
     "desc liveDemo";
   font-family: "Comic Neue" !important;
   gap: 20px;
+  min-height: 90vh;
 }
 
 .project__title {
